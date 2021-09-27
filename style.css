@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.yellow{
+    background-color:hsl(31, 77%, 52%) ;
+    width: 12%;
+    padding: 40px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.violet{
+    background-color: hsl(184, 100%, 22%);
+    width: 12%;
+    padding: 40px;
+}
+
+.green{
+    background-color: hsl(179, 100%, 13%);
+    width: 12%;
+    padding: 40px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.yellow,.violet,.green{
+    height: 360px;
+    position: relative;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.first, .second,.third{
+margin-bottom: 60px;
+color: hsla(0, 0%, 100%, 0.75);
+font-size: 15px;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    border-radius: 55px;
+    font-family: 'Lexend Deca', sans-serif;
+    border:2px solid hsl(0, 0%, 95%);
+    position: absolute;
+    bottom: 40px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    color:  hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.btn1{
+    color:hsl(31, 77%, 52%);
+}
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+@media(max-width:1000px){
+    .yellow,.violet,.green{
+        width: 20%;
+    }
+}
+@media(max-width:635px){
+    body{
+        flex-direction: column;
+    }
+    .yellow{
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+    }
+    .green{
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 0;
+    }
+     .yellow,.violet,.green{
+        width: 30%;
+    }
+    
+}
+@media(max-width:430px)
+{
+    .yellow,.violet,.green{
+        width: 40%;
+    }
+}
+@media(max-width:300px)
+{
+    .yellow,.violet,.green{
+        width: 50%;
+    }
+}
