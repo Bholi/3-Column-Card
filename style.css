@@ -73,7 +73,7 @@ h1{
     }
 }
 @media(max-width:635px){
-    body{
+    main{
         flex-direction: column;
     }
     .yellow{
